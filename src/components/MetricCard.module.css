@@ -1,0 +1,10 @@
+.card { padding: 1.5rem; background: #ffffff; border: 1px solid #ddd6fe; transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.5s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(109, 40, 217, 0.35); }
+.badge { display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; background: #ede9fe; color: #6d28d9; }
+.titulo { margin: 1rem 0 0.25rem; font-size: 0.8rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.08em; }
+.valor { margin: 0; font-size: 2.25rem; font-weight: 800; color: #6d28d9; }
+.descripcion { margin: 0.5rem 0 0; font-size: 0.875rem; color: #4b5563; }
+:global(.dark) .card { background: #1a1030; border-color: #4c1d95; }
+:global(.dark) .badge { background: #2e1065; color: #c4b5fd; }
+:global(.dark) .valor { color: #a78bfa; }
+:global(.dark) .titulo, :global(.dark) .descripcion { color: #a3a3a3; }

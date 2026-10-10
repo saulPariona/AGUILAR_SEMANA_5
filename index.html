@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/LOGO.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HuellitasVet | Clínica veterinaria en Huancayo</title>
+    <meta name="description" content="Clínica veterinaria con consulta general, vacunación, cirugía y peluquería para tu mascota." />
+    <meta name="keywords" content="veterinaria, mascotas, vacunas, perros, gatos, Huancayo" />
+    <meta name="theme-color" content="#6d28d9" />
+    <meta property="og:title" content="HuellitasVet" />
+    <meta property="og:description" content="Cuidamos a tu mascota como a familia." />
+    <script>
+      (function () {
+        var tema = localStorage.getItem('tema')
+        var oscuro = tema ? tema === 'oscuro' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (oscuro) document.documentElement.classList.add('dark')
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
